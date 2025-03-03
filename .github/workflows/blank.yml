@@ -7,7 +7,8 @@ on:
 
 jobs:
   sshx-session:
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
+    container: debian:latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
